@@ -1,0 +1,248 @@
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('/mbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height */
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('header.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background for nav */
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Keeps navbar fixed */
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover and active states for navigation links */
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #FF6F61;
+    transform: translateY(-2px); /* Slight elevation effect */
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: url('your-hero-image.jpg') no-repeat center center fixed; /* Your background image */
+    background-size: cover;
+    z-index: 1;
+    margin-top: 0;
+}
+
+/* Dark overlay for better text contrast */
+#hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Increased opacity for better visibility */
+    z-index: -1; /* Ensures overlay is below text but above background */
+}
+
+/* Hero Heading */
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Hero Paragraph */
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Button Styling */
+#hero .button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero .button:hover {
+    background-color: #FF4C39;
+    transform: scale(1.05); /* Button hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section a.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Adds space above the button */
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+section a.button:hover {
+    background-color: #45A049;
+    transform: scale(1.05); /* Button hover effect */
+}
+
+/* Additional Styling for Button to Avoid Overlapping */
+button {
+    max-width: 300px; /* Limits the width of the button */
+    width: 100%;
+}
+
+/* Ensure the button is not squeezed in narrow containers */
+section a.button {
+    width: auto; /* Ensure the width adjusts based on content */
+    min-width: 150px; /* Ensures the button has a minimum width */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Hover effect for footer links */
+footer a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Make footer links responsive */
+footer p a {
+    font-size: 1.1rem;
+}
+
+/* Sticky footer when content is short */
+html {
+    height: 100%;
+}
+
+body > *:not(footer) {
+    flex: 1;
+}
+
+/* Fade-in animation for elements */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer p a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}

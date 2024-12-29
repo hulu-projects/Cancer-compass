@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cancer Compass</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Contact Form Styling */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e85c52;
+        }
+
+        /* Social Links Styling */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            font-size: 1.5rem; /* Larger icons */
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .social-links a:hover {
+            background-color: #FF6F61;
+        }
+
+        /* Social icon sizes */
+        .fa-linkedin, .fa-github, .fa-envelope {
+            font-size: 24px; /* Ensure the icons fit well */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <marquee><h1>Welcome to Cancer Compass</h1></marquee>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support Groups</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main style="padding: 20px;">
+        <section id="contact">
+            <h2 style="text-align: center; color: #333;">Get in Touch with Us</h2>
+            <p style="text-align: center;">If you have any questions, suggestions, or need further information about cancer awareness, feel free to reach out to us. We would love to hear from you!</p>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Social Media Links with Icons -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/your-github" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:your-email@example.com" class="email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Dedicated to my beloved aunt who will always live in my heart and to all fighting against cancer.</p>
+        <p>Made with love by Huluager Mulat!!</p>
+        <p><a href="awareness.html" style="color: #FF6F61; text-decoration: none;">Awareness</a> | 
+            <a href="types.html" style="color: #FF6F61; text-decoration: none;">Types</a> | 
+            <a href="about.html" style="color: #FF6F61; text-decoration: none;">About Us</a> | 
+            <a href="contact.html" style="color: #FF6F61; text-decoration: none;">Contact</a> | 
+            <a href="support.html" style="color: #FF6F61; text-decoration: none;">Support Groups</a>
+        </p>
+    </footer>
+
+</body>
+</html>
